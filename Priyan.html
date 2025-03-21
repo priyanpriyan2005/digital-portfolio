@@ -15,21 +15,22 @@
             color: #fff;
             text-align: center;
             padding: 2rem 0;
-            position: relative;
+            position: relative; /* Add this */
         }
 
         .header-content h1 {
             font-size: 2.5rem;
         }
 
+        /* Add styles for the round profile picture */
         .profile-picture {
-            width: 100px;
+            width: 100px; /* Adjust the size as needed */
             height: 100px;
-            border-radius: 75%;
-            object-fit: cover;
-            position: absolute;
-            top: 75px;
-            left: 75px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
         }
 
         nav {
@@ -93,9 +94,10 @@
 <body>
     <header>
         <div class="header-content">
+            <!-- Add your profile picture here -->
             <img src="passport photo.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>Priyan B</h1>
-            <p>BCA Student</p>
+            <h1>Priyan B </h1>
+            <p>Am BCA Student</p>
         </div>
     </header>
 
@@ -106,22 +108,25 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
+           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>I'm a passionate Development BCA student with a strong interest in programming, software development, and web technologies. 
-                I enjoy learning new programming languages, developing web applications, and exploring cloud computing. 
-                My goal is to build efficient and user-friendly software solutions while continuously enhancing my technical skills.</p>
+            <p>I'm a <b>BCA Student</b>  with a strong foundation in Python, C, C++, Java, and Machine Learning & AI. 
+                Passionate about technology, I enjoy building software solutions, automating processes, and exploring innovative applications. Always eager to learn and stay updated with industry trends, I strive to create efficient and scalable solutions.</p>
+
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p>Madras University - BCA Student</p>
+            <p>Madras University-BCA </p>
+            
+            
         </div>
     </section>
 
@@ -129,11 +134,15 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>Java</li>
-                <li>C++</li>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>Photoshop</li>
                 <li>Python</li>
-                <li>Data Structures</li>
-                <li>Android App Development</li>
+                <li>PowerPoint</li>
+                <li>ML & AI</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
             </ul>
         </div>
     </section>
@@ -142,33 +151,38 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">E-Cart Website</a></li>
-                <li><a href="#">Cloud Security with IBM</a></li>
-                <li><a href="#">IBM Chatbot</a></li>
-                <li><a href="#">College Portal</a></li>
+                <li><a href="#">TRAFFIC SIGNAL RECOGNITION </a></li>
+                 <!-- Add more project links here -->
+                  <a href="D:\RANJETH\TRAFFIC SIGNAL RECOGNITION UPDATED.docx" target="_blank" class="download-button">Download </a>
+
             </ul>
         </div>
     </section>
 
     <section id="resume">
+    
         <div class="section-content">
             <center>
-                <h2>Resume</h2>
-                <a href="file.pdf" target="_blank" class="download-button">Download CV</a>
-            </center>
+            <h2>Resume</h2>
+            <a href="MY.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
         </div>
+        
     </section>
 
     <footer>
-        <p>&copy; 2025 Priyan B</p>
+        <p>&copy; 2025 Pranesh S</p>
     </footer>
 
     <script>
+        // Smooth scrolling to section when clicking on navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
+
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop,
@@ -180,4 +194,3 @@
     </script>
 </body>
 </html>
-
